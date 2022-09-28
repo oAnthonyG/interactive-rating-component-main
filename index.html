@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+
+<body>
+  <main>
+    <!-- Rating state start -->
+    <section class="main_card first-card">
+      <img class="main__card__icon" src="./images/icon-star.svg" alt="">
+      <h1 class="main__card__title"> How did we do?</h1>
+
+      <p class="main__card__text"> Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+
+      <article class="main_form" action="">
+        <div class="main__form__div">
+          <button class="main__form__note" >1</button>
+          <button class="main__form__note" >2</button>
+          <button class="main__form__note" >3</button>
+          <button class="main__form__note" >4</button>
+          <button class="main__form__note" >5</button>
+        </div>
+        <button class="main_button">Submit</button>
+      </article>
+      <!-- Rating state end -->
+    </section>
+
+    <!-- Thank you state start -->
+    <section class="main_card second_card -active ">
+      <img src="./images/illustration-thank-you.svg" alt="">
+      <h2 class="main_card__title__state"> You selected <span id="rating">5</span> out of 5
+      </h2>
+
+      <h2 class="main__card__title">Thank you!</h2>
+
+      <p class="main__card__text">We appreciate you taking the time to give a rating. If you ever need more support,
+        dont hesitate to get in touch!</p>
+
+      <!-- Thank you state end -->
+    </section>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Anthony Guilherme</a>.
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
